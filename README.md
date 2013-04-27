@@ -1,13 +1,13 @@
-# Title of Project
+# Development wp-config.php setup for WordPress
 
 ### Summary
-A developer's setup for wp-config.php files that will accommodate:
+A developer's setup for `wp-config.php` files that will accommodate:
 
 + Local development servers,
 + Remote database servers,
 + Production servers
 
-This could also be easily adapted to use local, staging, production.
+This could also be easily adapted to use local, staging, production setups.
 
 ### Requirements
 + WordPress
@@ -23,7 +23,8 @@ This could also be easily adapted to use local, staging, production.
 
 ----
 
-### Example
+### Why should I use this?
+Really, if you're asking, you probably shouldn't.  If you're struggling with switching between local and remote environments, this may help.
 
-### Documentation
+### Credits
 + Based on [Mark Jaquith's](https://github.com/markjaquith) ] blog post entitled ["WordPress local dev tips: DB & plugins"](http://markjaquith.wordpress.com/2011/06/24/wordpress-local-dev-tips/).  **Thanks Mark!**
