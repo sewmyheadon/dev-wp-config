@@ -20,10 +20,10 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	include( dirname( __FILE__ ) . '/local-config.php' );
 	define( 'WP_LOCAL_DEV', true ); // Will disable plugins defined in mu-plugins/disable-plugins-when-doing-local-dev.php
 
-// if there's a remote configuration file (local files, remote database)
-} else if ( file_exists( dirname(__FILE__) . '/remote-config.php' ) ) { 
+// if there's a staging configuration file (local files, staging database)
+} else if ( file_exists( dirname(__FILE__) . '/staging-config.php' ) ) { 
 
-	include( dirname( __FILE__ ) . '/remote-config.php' );
+	include( dirname( __FILE__ ) . '/staging-config.php' );
 	define( 'WP_LOCAL_DEV', false ); // Will not disable plugins
 
 } else {

@@ -4,7 +4,7 @@
 A developer's setup for `wp-config.php` files that will accommodate:
 
 + Local development servers,
-+ Remote database servers,
++ staging database servers,
 + Production servers
 
 This could also be easily adapted to use local, staging, production setups.
@@ -16,13 +16,13 @@ This could also be easily adapted to use local, staging, production setups.
 ### How to Use
 1. Use this `wp-config.php` file instead of the default WordPress `wp-config.php` file.
 1. If you need to develop locally, copy/create a `local-config.php` file and drop it in the WordPress install's root directory.
-1. If you need to develop locally and use a *remote database*, copy/create a `staging-config.php` file and drop it in the WordPress install and make sure there's no active `local-config.php` file.
+1. If you need to develop locally and use a *staging database*, copy/create a `staging-config.php` file and drop it in the WordPress install and make sure there's no active `local-config.php` file.
 1. If you're using git, or another version control system, include `wp-config.php` in your repository, but you'll probably want to ignore both 'local-config.php' and 'staging-config.php' if you're deploying from your repository.
 
 ----
 
 ### Why should I use this?
-Really, if you're asking, you probably shouldn't.  If you're struggling with switching between local and remote environments, this may help.
+Really, if you're asking, you probably shouldn't.  If you're struggling with switching between local and staging environments, this may help.
 
 > With great power, comes great responsibility.
 
