@@ -1,4 +1,11 @@
 <?php 
+/**
+ * The LOCAL configuration.
+ *
+ * This file has the following configurations: MySQL settings. 
+ *
+ * @package WordPress
+ */
 /*
 	MySQL database
 */

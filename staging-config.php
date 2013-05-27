@@ -1,19 +1,26 @@
 <?php 
+/**
+ * The STAGING configuration.
+ *
+ * This file has the following configurations: MySQL settings. 
+ *
+ * @package WordPress
+ */
 
 /*
 	MySQL database
 */
-define( 'DB_NAME', 'remote_database_name' );
+define( 'DB_NAME', 'staging_database_name' );
 
 /*
 	MySQL database username
 */
-define( 'DB_USER', 'remote_database_user' );
+define( 'DB_USER', 'staging_database_user' );
 
 /*
 	MySQL database password 
 */
-define( 'DB_PASSWORD', 'remote_database_password' );
+define( 'DB_PASSWORD', 'staging_database_password' );
 
 /*
 	MySQL hostname 
@@ -23,4 +30,4 @@ define( 'DB_PASSWORD', 'remote_database_password' );
 	Make sure that the remote server is configured to accept incoming,
 	remote connections, and that any firewall is updated to allow your IP
 */
-define( 'DB_HOST', 'remote_database_hostname:3306' );
+define( 'DB_HOST', 'staging_database_hostname:3306' );
