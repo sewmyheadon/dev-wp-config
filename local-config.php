@@ -6,6 +6,7 @@
  *
  * @package WordPress
  */
+
 /*
 	MySQL database
 */
@@ -22,11 +23,14 @@ define( 'DB_USER', 'local_database_user' );
 define( 'DB_PASSWORD', 'local_database_password' );
 
 /*
-	MySQL hostname 
-	
-	Usually 'localhost'
+	MySQL hostname (usually 'localhost')
 */
-define( 'DB_HOST', 'local_database_hostname' );
+define( 'DB_HOST', 'localhost' );
+
+/*
+	MySQL table prefix.
+ */
+	$table_prefix = 'wp_';
 
 /*
 	Turn on WordPress debugging mode

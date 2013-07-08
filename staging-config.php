@@ -23,11 +23,20 @@ define( 'DB_USER', 'staging_database_user' );
 define( 'DB_PASSWORD', 'staging_database_password' );
 
 /*
-	MySQL hostname 
-	
-	Most remote servers will use a subdomain for their MySQL server like 
-	hero.serverfarm.com - specify the port used for MySQL connections.
-	Make sure that the remote server is configured to accept incoming,
-	remote connections, and that any firewall is updated to allow your IP
+	MySQL hostname (usually 'localhost')
 */
-define( 'DB_HOST', 'staging_database_hostname:3306' );
+define( 'DB_HOST', 'localhost' );
+
+/*
+	MySQL table prefix.
+ */
+	$table_prefix = 'wp_';
+
+/*
+	Turn on WordPress debugging mode
+
+	Change this to true to enable the display of notices during development.
+	It is strongly recommended that plugin and theme developers use WP_DEBUG
+	in their development environments.
+*/
+define('WP_DEBUG', true);

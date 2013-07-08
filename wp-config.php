@@ -20,7 +20,7 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	include( dirname( __FILE__ ) . '/local-config.php' );
 	define( 'WP_LOCAL_DEV', true ); // Will disable plugins defined in mu-plugins/disable-plugins-when-doing-local-dev.php
 
-// if there's a staging configuration file (local files, staging database)
+// if there's a staging configuration file (staging files, staging database)
 } else if ( file_exists( dirname(__FILE__) . '/staging-config.php' ) ) { 
 
 	include( dirname( __FILE__ ) . '/staging-config.php' );
@@ -42,6 +42,12 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	/** MySQL hostname */
 	define( 'DB_HOST', 'localhost' );
 
+	/** For developers: WordPress debugging mode.*/
+	define('WP_DEBUG', false);
+
+	/** MySQL table prefix.*/
+	$table_prefix = 'wp_';
+
 }
 
 /** Database Charset to use in creating database tables. */
@@ -52,15 +58,6 @@ define('DB_COLLATE', '');
 
 /** Up memory limit **/
 define('WP_MEMORY_LIMIT', '128M');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-
-/** Change frequency of auto-save. */
-define('AUTOSAVE_INTERVAL', 500 );
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -82,16 +79,6 @@ define('NONCE_SALT',       '3cc9zqfmkblr7vdkz63wgg2xxippqsh6vszcsmekqjgeyfeowypa
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
- *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
- */
-
-/** For godsakes, change the freaking table prefix. */
-$table_prefix = 'wp_';
-
-/**
  * WordPress Localized Language, defaults to English.
  *
  * Change this to localize WordPress.  A corresponding MO file for the chosen
@@ -100,15 +87,6 @@ $table_prefix = 'wp_';
  * language support.
  */
 define ('WPLANG', '');
-
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
-define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
