@@ -59,6 +59,9 @@ define('DB_COLLATE', '');
 /** Up memory limit **/
 define('WP_MEMORY_LIMIT', '128M');
 
+/** Turn off file and plugin editors in WP Dashboard. */
+define('DISALLOW_FILE_EDIT', true);
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
