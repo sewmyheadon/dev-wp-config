@@ -56,11 +56,14 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-/** Up memory limit **/
-define('WP_MEMORY_LIMIT', '128M');
+/** Increase memory limit **/
+define('WP_MEMORY_LIMIT', '96M');
 
 /** Turn off file and plugin editors in WP Dashboard. */
 define('DISALLOW_FILE_EDIT', true);
+
+/** Disables all core updates */
+define( 'WP_AUTO_UPDATE_CORE', false );
 
 /**#@+
  * Authentication Unique Keys and Salts.
