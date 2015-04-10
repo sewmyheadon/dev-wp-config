@@ -15,15 +15,15 @@
  */
 
 // if there's a local configuration file (local files, local database)
-if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 
-	include( dirname( __FILE__ ) . '/local-config.php' );
+	include( dirname( __FILE__ ) . '/wp-config-local.php' );
 	define( 'WP_LOCAL_DEV', true ); // Will disable plugins defined in mu-plugins/disable-plugins-when-doing-local-dev.php
 
 // if there's a staging configuration file (staging files, staging database)
-} else if ( file_exists( dirname(__FILE__) . '/staging-config.php' ) ) { 
+} else if ( file_exists( dirname(__FILE__) . '/wp-config-staging.php' ) ) { 
 
-	include( dirname( __FILE__ ) . '/staging-config.php' );
+	include( dirname( __FILE__ ) . '/wp-config-staging.php' );
 	define( 'WP_LOCAL_DEV', false ); // Will not disable plugins
 
 } else {
