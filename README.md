@@ -13,9 +13,9 @@ A developer's setup for `wp-config.php` files that will accommodate:
 
 ### How to Use
 1. Use this `wp-config.php` file instead of the default WordPress `wp-config.php` file.  It contains the logic to determine which files settings to use.
-1. If you need to develop locally, copy/create a `local-config.php` file and drop it in the WordPress install's root directory and configure database settings.
-1. If you have a staging site, copy/create a `staging-config.php` file and drop it in the WordPress install and make sure there's no active `local-config.php` file.
-1. If you're using git, or another version control system, include `wp-config.php` in your repository, but you'll probably want to ignore both 'local-config.php' and 'staging-config.php' if you're deploying from your repository.
+1. If you need to develop locally, copy/create a `wp-config-local.php` file and drop it in the WordPress install's root directory and configure database settings.
+1. If you have a staging site, copy/create a `wp-config-staging.php` file and drop it in the WordPress install and make sure there's no active `wp-config-local.php` file.
+1. If you're using git, or another version control system, include `wp-config.php` in your repository, but you'll probably want to ignore both 'wp-config-local.php' and 'wp-config-staging.php' if you're deploying from your repository.
 
 ----
 
