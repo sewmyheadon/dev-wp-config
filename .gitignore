@@ -1,4 +1,8 @@
-
+# Program configs #
+###################
 *.sublime-workspace
-
 *.sublime-project
+
+# WordPress Configs #
+#####################
+wp-config-local.php

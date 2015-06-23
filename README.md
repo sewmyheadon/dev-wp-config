@@ -25,6 +25,7 @@ Really, if you're asking, you probably shouldn't.  If you're struggling with swi
 > With great power, comes great responsibility.
 
 ### Version
+0.2.1 - Added wp-config-local.php to .gitignore
 0.2.0 - Updated filenames
 0.1.2 - Code tidying, shuffling, update docs
 0.1.1 - Renamed files to better mimic our setup
