@@ -7,30 +7,23 @@
  * @package WordPress
  */
 
-/*
-	MySQL database
-*/
+/* MySQL database */
 define( 'DB_NAME', 'local_database_name' );
 
-/*
-	MySQL database username
-*/
+/* MySQL database username */
 define( 'DB_USER', 'local_database_user' );
 
-/*
-	MySQL database password 
-*/
+/* MySQL database password  */
 define( 'DB_PASSWORD', 'local_database_password' );
 
-/*
-	MySQL hostname (usually 'localhost')
-*/
+/* MySQL hostname (usually 'localhost') */
 define( 'DB_HOST', 'localhost' );
 
-/*
-	MySQL table prefix.
- */
-	$table_prefix = 'wp_';
+/* MySQL table prefix. */
+$table_prefix = 'wp_';
+
+/* make Jetpack work locally */
+ define( 'JETPACK_DEV_DEBUG', true);
 
 /*
 	Turn on WordPress debugging mode
